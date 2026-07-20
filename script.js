@@ -228,6 +228,10 @@ noButton.addEventListener('pointerdown', (event) => {
   event.preventDefault();
   chaseNoButton();
 });
+noButton.addEventListener('touchstart', (event) => {
+  event.preventDefault();
+  chaseNoButton();
+}, { passive: false });
 noButton.addEventListener('click', (event) => {
   event.preventDefault();
   chaseNoButton();
