@@ -1,0 +1,33 @@
+<svg width="1600" height="1200" viewBox="0 0 1600 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="171" y1="102" x2="1429" y2="1099" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2B1022"/>
+      <stop offset="0.5" stop-color="#5A1E46"/>
+      <stop offset="1" stop-color="#0E0A16"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1098 387) rotate(125.173) scale(564.138 476.211)">
+      <stop stop-color="#FF9EC5" stop-opacity="0.72"/>
+      <stop offset="1" stop-color="#FF9EC5" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(410 854) rotate(32.8051) scale(610.77 516.321)">
+      <stop stop-color="#FFD86B" stop-opacity="0.48"/>
+      <stop offset="1" stop-color="#FFD86B" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur" x="0" y="0" width="1600" height="1200" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="60"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="1200" fill="url(#bg)"/>
+  <circle cx="1110" cy="360" r="330" fill="url(#glow)" filter="url(#blur)"/>
+  <circle cx="350" cy="860" r="360" fill="url(#glow2)" filter="url(#blur)"/>
+  <g opacity="0.22">
+    <path d="M1059 278C1109 205 1207 205 1257 278C1306 351 1289 454 1219 510L1158 558L1097 510C1027 454 1010 351 1059 278Z" fill="#FFD0E0"/>
+    <path d="M301 332C337 282 406 282 442 332C477 382 465 454 416 493L372 527L327 493C278 454 266 382 301 332Z" fill="#FFDB8E"/>
+  </g>
+  <g opacity="0.15">
+    <circle cx="272" cy="197" r="12" fill="#FFF8FC"/>
+    <circle cx="1290" cy="172" r="9" fill="#FFF8FC"/>
+    <circle cx="1378" cy="924" r="10" fill="#FFF8FC"/>
+    <circle cx="214" cy="984" r="13" fill="#FFF8FC"/>
+  </g>
+</svg>

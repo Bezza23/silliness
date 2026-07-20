@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Very Importand Question</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="screen screen--active intro-screen" id="intro-screen" aria-label="Intro screen">
+        <div class="intro-stage">
+          <img
+            class="intro-image"
+            src="assets/images/landing/photo_2026-07-20_20-16-27.jpg"
+            alt="The background photo"
+          />
+        </div>
+      </section>
+
+      <section class="screen hero-screen" id="landing-screen" aria-label="Landing page">
+        <div class="heart-layer" id="heart-layer" aria-hidden="true"></div>
+        <div class="hero-panel">
+          <p class="eyebrow">A tiny mission with huge consequences</p>
+          <h1>A very importand question........</h1>
+          <p class="subhead">Before proceeding, please confirm you're the cutest idiot i know</p>
+          <div class="button-row" id="choice-area">
+            <button class="choice-button choice-button--yes" id="yes-button">Yes</button>
+            <button class="choice-button choice-button--no" id="no-button" type="button">No</button>
+          </div>
+          <p class="hint">Try not to be dramatic. The correct answer is obvious.</p>
+        </div>
+      </section>
+
+      <section class="screen loading-screen" id="loading-screen" aria-hidden="true">
+        <div class="loading-panel">
+          <p class="eyebrow">System check in progress</p>
+          <div class="loading-copy" id="loading-copy">
+            <p>Scanning...</p>
+            <p>Checking vibe compatibility...</p>
+            <p>Finding evidence that you're a menace...</p>
+            <p>100% complete.</p>
+          </div>
+          <div class="loader-bar" aria-hidden="true">
+            <span class="loader-bar__fill" id="loader-fill"></span>
+          </div>
+          <h2 class="loading-result" id="loading-result">certified simp material</h2>
+        </div>
+      </section>
+
+      <section class="screen music-screen" id="music-screen" aria-hidden="true">
+        <div class="screen-header">
+          <p class="eyebrow">Music section</p>
+          <h2>Gallery of poor decisions and good songs</h2>
+        </div>
+
+        <article class="gallery-card gallery-card--active" id="music-card-1" data-slide="1">
+          <div class="gallery-media">
+            <img class="gallery-image" src="assets/images/gallery/picture1.jpg" alt="Gallery photo one" />
+          </div>
+          <div class="gallery-copy">
+            <p class="card-kicker">Slide 1</p>
+            <h3>My favorite song we sung togehter</h3>
+            <p>A memory worth keeping on repeat.</p>
+          </div>
+        </article>
+
+        <article class="gallery-card" id="music-card-2" data-slide="2" aria-hidden="true">
+          <div class="gallery-media">
+            <img class="gallery-image" src="assets/images/gallery/picture2.jpg" alt="Gallery photo two" />
+          </div>
+          <div class="gallery-copy">
+            <p class="card-kicker">Slide 2</p>
+            <h3>next this week karoke song to be</h3>
+          </div>
+        </article>
+
+        <article class="gallery-card" id="music-card-3" data-slide="3" aria-hidden="true">
+          <div class="gallery-copy gallery-copy--full">
+            <p class="card-kicker">Culturing Amush</p>
+            <h3>በዛ በበጋ</h3>
+            <pre class="lyrics">በዛ በበጋ
+በዛ በሙቀት
+እጮኛ ተፍቶ በፍለጋ
+መሸበትና ሰዉ ቤት ገባ
+ልጅቶን አያት ተከናባ
+ወደዳት ወደደችዉ
+ይዟት ጠፋ በሊቱ
+ደሞ ደሞ
+ጉዞ ለጉዞ
+አባይ ደረሱ በጣም ተሞላ
+ለመሻገር ሲሞክሩ
+ሰምጣ ቀረች የሱ ፍቅሩ
+አለቀሰ ሆዱ ባባ
+አለቀሰ የፍቅር እምባ
+የኔ ፍቅር የኔ ፍቅር
+አረሳሽም እስከመቃብር
+ሄደሻልና አትመለሽም
+ከሞት የሚቀር የለም
+ከሞት የሚቀር የለም</pre>
+            <p class="lyrics-note">I wrote the lyrics myself probably butchered it up a lot so just in case i am gonna add a link right here so you can listen to it.</p>
+            <a class="song-link" href="https://www.youtube.com/watch?v=7gfP7Jjf3rg&list=RD7gfP7Jjf3rg&start_radio=1" target="_blank" rel="noreferrer">Open the song</a>
+            <p class="warning">you better learn this by the end of the week.</p>
+          </div>
+          <div class="gallery-actions">
+            <button class="action-button" id="finish-button">Finish</button>
+          </div>
+        </article>
+
+        <div class="gallery-nav" aria-label="Gallery navigation">
+          <button class="nav-button" id="prev-slide" type="button">Back</button>
+          <button class="nav-button" id="next-slide" type="button">Next</button>
+        </div>
+      </section>
+
+      <section class="screen final-screen" id="final-screen" aria-hidden="true">
+        <div class="final-panel">
+          <p class="eyebrow">Final confirmation</p>
+          <h2>Will you go on a karaoke date with me</h2>
+          <div class="button-row button-row--final">
+            <button class="choice-button choice-button--yes" data-final-yes type="button">Yes</button>
+            <button class="choice-button choice-button--yes" data-final-yes type="button">Yes</button>
+          </div>
+          <p class="final-message" id="final-message" aria-live="polite"></p>
+          <button class="action-button final-restart" id="restart-button" type="button" hidden>Repeat</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
